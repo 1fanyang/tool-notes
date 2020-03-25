@@ -48,6 +48,9 @@ language = 'zh_CN'
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# setup master doc to avoid content.rst missing error in read thedocs web compilance
+master_doc = 'index'
+
 # recommonmark to support markdown script
 from recommonmark.parser import CommonMarkParser
 source_parsers = {
