@@ -1,6 +1,16 @@
 
 ## Postgres tools
 
+connect to postgres database using command line
+```
+psql -h hostname -p port -U user -d dbname
+```
+
+exit from interactive terminal 
+```
+\q
+```
+
 create table
 ```
 create table table_name(
@@ -31,3 +41,9 @@ import table from csv file
 ```
 \copy face361 from '$absolute_path' delimiter ',' csv;
 ```
+
+run a file from cmd line
+```
+psql -U username -d dbname -a -f file.sql
+```
+
