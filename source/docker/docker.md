@@ -6,3 +6,8 @@ save an image
 docker save -o imgname.tar imgname:version
 gzip imgname.tar
 ```
+
+access in iteractive mode
+```
+docker exec -it container-name bash
+```
