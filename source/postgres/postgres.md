@@ -42,6 +42,12 @@ import table from csv file
 \copy face361 from '$absolute_path' delimiter ',' csv;
 ```
 
+switch database, postgres, template0, template1 are default database
+```
+\c dbname
+```
+
+
 run a file from cmd line
 ```
 psql -U username -d dbname -a -f file.sql
