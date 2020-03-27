@@ -13,4 +13,7 @@ access in iteractive mode
 docker exec -it container-name bash
 ```
 
-
+remove all exited containers
+```
+docker rm $(docker ps -a -f status=exited -q)
+```
