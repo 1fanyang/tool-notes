@@ -37,9 +37,11 @@ export table from database to csv file
 \copy (select id, encode(feature, 'hex'), image_url from table_name) to 'relative_path' with delimiter ',' csv header; 
 ```
 
-import table from csv file
+import table from csv file (copy to remote host)
 ```
 \copy face361 from '$absolute_path' delimiter ',' csv;
+
+psql -h 192.168.12.101 -p 32467 -d postgres -U gpadmin -c  "copy masktest  from STDIN with delimiter as ',' csv;" < /home/yifan/temp/mask_retail/mask.csv
 ```
 
 switch database, postgres, template0, template1 are default database
