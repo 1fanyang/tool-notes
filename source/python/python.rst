@@ -1,4 +1,0 @@
-Python tools
-==============
-jupyter remote connection
-see https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/
